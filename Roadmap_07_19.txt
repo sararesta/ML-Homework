@@ -1,0 +1,22 @@
+Data visualization:
+
+SARA:
+1. guarda e prova con il modello di regressione lineare -> classico
+2. prova a capire come potresti usare più modelli lineari
+3. prova a capire che cavolo sono sti evaluation robusti
+	MSE
+	bias-variance
+	RSE
+	R^2
+
+VALE:
+1. visual inspection categoriche
+	- barplot se ci sono tanti livelli
+	- pie se sono 2/3
+2. rendere le variabili che ne hanno bisogno categoriche 
+online_shoppers['Region']=online_shoppers['Region'].astype('category')
+3. fare i boxplot per le continue -> fai un summary tipo quello di R
+
+
+NON ASSEGNATA:
+1. plottare la distribuzione delle continue
