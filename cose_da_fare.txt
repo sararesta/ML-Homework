@@ -1,0 +1,5 @@
+Problemi.
+1. che dataset bisogna usare per visual inspection?
+2. visual inspection: analisi dati in modo da visualizzare boxplot etc...
+3. togliere la colonna degli id da training e test set
+4. conoscere il website
