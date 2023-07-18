@@ -9,14 +9,14 @@ SARA:
 	RSE
 	R^2
 
-VALE:
-1. visual inspection categoriche
-	- barplot se ci sono tanti livelli
-	- pie se sono 2/3
-2. rendere le variabili che ne hanno bisogno categoriche 
-online_shoppers['Region']=online_shoppers['Region'].astype('category')
-3. fare i boxplot per le continue -> fai un summary tipo quello di R
-
 
 NON ASSEGNATA:
 1. plottare la distribuzione delle continue
+
+COMMENTI:
+- Non ho reso "Revenue" categorica perchè è la variabile su cui faremo la regressione, ma in questo modo risulta nella heatmap.
+- Ho lasciato scritto il più possibile (numero categorie, numero di conti per categoria, ecc) perchè forse per il momento ci fa comodo che sia tutto scritto, nel caso commentiamo.
+- In un secondo momento possiamo usare Seaborn per fare i grafici belli.
+- Possiamo raggruppare le continue secondo le categoriche e mostrare i boxplot. Secondo me potrebbe starci se abbiamo qualche correlazione tra continue e categoriche
+- Va capito il time se sono secondi o minuti
+- Le continue sono orribili perchè sono tutti valori piccolissimi, penso che la cosa migliore sia metterle tutte dentro un unico dataset e plottare il summary, senza grafici
