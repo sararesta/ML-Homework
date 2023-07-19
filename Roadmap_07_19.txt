@@ -1,13 +1,20 @@
 Data visualization:
 
 SARA:
+0. lavora sul training set e suddividilo in due (nan e non nan) OK
 1. guarda e prova con il modello di regressione lineare -> classico
+	- come faccio a fare regressione lineare con le variabili categoriche?
+		one hot encoding -> una variabile binaria per ogni categoria. 
+		per le variabili con molte categorie setto una threshold in modo da raggruppare tutte le categorie più numerose. 
+		come setto la threshold? un po' a caso, mihail e irene hanno usato delle threshold che mi sembrano sensate
+	- come faccio a vedere chi è correlato con la target variable?
+	
 2. prova a capire come potresti usare più modelli lineari
 3. prova a capire che cavolo sono sti evaluation robusti
-	MSE
-	bias-variance
-	RSE
-	R^2
+	- MSE
+	- bias-variance
+	- RSE
+	- R^2
 
 
 NON ASSEGNATA:
