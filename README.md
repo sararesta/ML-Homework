@@ -1,4 +1,7 @@
 # ML-Homework
+
+A more detaild description of the dataset can befound here https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset
+
 ## Roadmap
 
 ### 1. Preliminary analysis
