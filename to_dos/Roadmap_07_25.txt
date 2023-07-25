@@ -1,0 +1,5 @@
+1. sistemare discorso feature selection -> usare quella con cv (sara ma più avanti)
+2. avere un'idea di varianza e covarianza tra le variabili (vale)
+3. usare sfs (sia nella classification che nella regression) -> da provare (sara)
+4. impostare svm (vale) -> ho già guardato il notebook, la parte utile è da svm in poi, separable case è una roba mega utopistica, lo eviterei proprio e andrei diretta su svm e kernel (vale)
+5. valutazione algoritmi di classificazione (sara)
