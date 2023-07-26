@@ -1,0 +1,56 @@
+Sì, puoi impostare un threshold sulla varianza catturata per selezionare il numero di componenti principali da mantenere durante l'applicazione di PCA. Questo approccio ti consente di controllare la quantità di varianza spiegata dai componenti principali e decidere quanto ridurre la dimensionalità dei dati.
+
+Quando calcoli gli autovalori e gli autovettori durante l'esecuzione di PCA, gli autovalori rappresentano la varianza spiegata da ciascun componente principale. Se ordini gli autovalori in ordine decrescente, puoi calcolare la percentuale di varianza spiegata cumulativa aggiungendo gradualmente gli autovalori. Questo ti permette di visualizzare graficamente quanto varianza è spiegata da ogni componente principale.
+
+Ecco un esempio di come puoi utilizzare questa tecnica per selezionare il numero di componenti principali:
+
+import numpy as np
+import pandas as pd
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
+
+# Carica il dataset Iris
+iris = load_iris()
+X = iris.data
+y = iris.target
+
+# Dividi il dataset in set di training e set di test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Standardizzazione dei dati
+scaler = StandardScaler()
+X_train_std = scaler.fit_transform(X_train)
+X_test_std = scaler.transform(X_test)
+
+# Applica PCA
+pca = PCA()
+X_train_pca = pca.fit_transform(X_train_std)
+
+# Calcola la percentuale di varianza spiegata cumulativa
+explained_variance_ratio_cumsum = np.cumsum(pca.explained_variance_ratio_)
+
+# Trova il numero di componenti che catturano il 95% della varianza
+n_components = np.argmax(explained_variance_ratio_cumsum >= 0.95) + 1
+
+# Riduci la dimensionalità del dataset utilizzando il numero selezionato di componenti principali
+pca = PCA(n_components=n_components)
+X_train_pca = pca.fit_transform(X_train_std)
+X_test_pca = pca.transform(X_test_std)
+
+# Addestramento della Logistic Regression sulle componenti principali
+logistic_regression = LogisticRegression()
+logistic_regression.fit(X_train_pca, y_train)
+
+# Predizione sul set di test
+y_pred = logistic_regression.predict(X_test_pca)
+
+# Valutazione del modello
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.2f}")
+
+print("Classification Report:")
+print(classification_report(y_test, y_pred))
