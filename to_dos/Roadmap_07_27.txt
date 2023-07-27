@@ -1,0 +1,18 @@
+1. sistemare visual inspection VALE
+	- usare il training set senza missing values
+	- revenue vs continue -> boxplot
+	- revenue vs categoriche -> chi-squared test -> tabella che dice se i pvalue sono significativi o no
+	- considerazioni su exit rates
+	- exitrares vs continue
+	- exit rates vs categoriche -> boxplot
+2. fare svm -> capire come fare feature selection SARA
+3. PCA -> capire se si può usare sulla classification SARA -> FUTURO
+4. residual plot nella regression VALE
+5. variance threshold nella regression VALE
+6. rifare regression con lasso e confrontare i risultati con forward stepwise VALE
+7. KNN sulle continue -> futuro
+8. sistemare sensitivity -> SARA
+	- sistema il discorso empirical threshold
+	- sistema la threshold con cui si fanno le predizioni per il test! 
+		a. y_pred_prob_test = model.predict_proba(X_test)[:, 1]
+		b. y_pred = (y_pred_prob_test >= new_threshold).astype(int)
