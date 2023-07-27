@@ -16,3 +16,4 @@
 	- sistema la threshold con cui si fanno le predizioni per il test! 
 		a. y_pred_prob_test = model.predict_proba(X_test)[:, 1]
 		b. y_pred = (y_pred_prob_test >= new_threshold).astype(int)
+9. Regression: sistemare l'algoritmo di feature selection: non deve contenere la parte relativa a test set -> sistemalo e rirunna tutto, anche se poi probabilmente userai quello generico con il dizionario. A proposito, forse il dizionario è un po' rudimentale: cerca di trovare una maniera carina per sistemarlo (se riesci a fare i puntatori a funzione come il prof top!!) SARA
