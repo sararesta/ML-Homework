@@ -28,12 +28,12 @@
 6. Scaler scala anche le categoriche?
 
 
-SISTEMARE PVALUES VISUAL --> Vale
-REGRESSION --> Vale
-1. Polynomial già a posto --> esce grado 1
-1.2 Linear da sola
-2. Linear con Ridge
-3. Linear con Lasso
+!!SISTEMARE PVALUES VISUAL --> Vale
+!!REGRESSION --> Vale
+!!1. Polynomial già a posto --> esce grado 1
+!!1.2 Linear da sola
+!!2. Linear con Ridge
+!!3. Linear con Lasso
 4. Linear con forward
 4.2 KNN
 5. Valutazione della cosa migliore
