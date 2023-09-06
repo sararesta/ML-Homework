@@ -7,21 +7,23 @@
   
 -------------------------------------------------------------
     
-<div style="text-align: justify;">
 # Project guidelines
+<div style="text-align: justify;">
 In this project, we aim to use the Online Shoppers Purchasing Intention dataset to
 build a classification model that can predict whether or not an online shopper has
 the intention to make a purchase.  
-  
+</div>
 ## Background
+<div style="text-align: justify;">
 The Online Shoppers Purchasing Intention dataset is a publicly available dataset
 that contains information on the browsing behavior and purchase history of online
 shoppers. The dataset contains different sessions, and it was formed so that each
 session would belong to a different user in a 1-year period to avoid any tendency to
 a specific campaign, special day, user profile, or period. The dataset has been made
 available on the UCI Machine Learning Repository.
-
+</div>
 ## Dataset Composition
+<div style="text-align: justify;">
 The dataset contains just over 12,000 samples and includes both categorical and
 continuous variables. The categorical variables include information on the type of
 the operating system, the region of the shopper, and whether or not the shopper was
@@ -30,8 +32,9 @@ the visit, the number of pages visited, and the exit rate, among others.
 We have provided you with a particular version of this dataset. There are two files
 representing the training set and the test set. For the purposes of this project, we
 have corrupted a significant amount of samples of the Exit Rate variable.
-
+</div>
 ## Project Steps and requests
+<div style="text-align: justify;">
  1. Perform preliminary analysis of the data. For instance, but not limited to
     visualizing samples, identifying if features are correlated, determining which
     are most correlated with the target class, and inspecting the distribution of
@@ -51,6 +54,7 @@ have corrupted a significant amount of samples of the Exit Rate variable.
     built using the remaining features.
  3. Repeat the analysis done at step 2 with clustering based algorithms; compare
     the performance with respect to the best classification model.
-  
+</div>
+<div style="text-align: justify;">
 A more detaild description of the dataset can befound here https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset
 </div>
