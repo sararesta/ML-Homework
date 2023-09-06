@@ -19,9 +19,8 @@ shoppers. The dataset contains different sessions, and it was formed so that eac
 session would belong to a different user in a 1-year period to avoid any tendency to
 a specific campaign, special day, user profile, or period. The dataset has been made
 available on the UCI Machine Learning Repository.
-</div>
+  
 ## Dataset Composition
-<div style="text-align: justify;">
 The dataset contains just over 12,000 samples and includes both categorical and
 continuous variables. The categorical variables include information on the type of
 the operating system, the region of the shopper, and whether or not the shopper was
