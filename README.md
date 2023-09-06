@@ -7,7 +7,7 @@
   
 -------------------------------------------------------------
     
-
+<div style="text-align: justify;">
 # Project guidelines
 In this project, we aim to use the Online Shoppers Purchasing Intention dataset to
 build a classification model that can predict whether or not an online shopper has
@@ -53,3 +53,4 @@ have corrupted a significant amount of samples of the Exit Rate variable.
     the performance with respect to the best classification model.
   
 A more detaild description of the dataset can befound here https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset
+</div>
