@@ -1,6 +1,0 @@
-Problemi.
-1. che dataset bisogna usare per visual inspection?
-2. visual inspection: analisi dati in modo da visualizzare boxplot etc...
-3. togliere la colonna degli id da training e test set
-4. conoscere il website
-5. ma quindi per fare training del modello dobbiamo eliminare tutte le righe per cui ExitRate è null? E poi testarlo su quelle?

@@ -1,8 +1,0 @@
-SARA:
-1. cerca di capire se il modello che hai fatto va bene -> confrontati su tutto
-2. feature selection
-	- subset/croov
-	- ridge/lasso
-
-VALE:
-1. farsi un'idea dei robust evaluation test con bozza di codice (vedi lab 3 samele)

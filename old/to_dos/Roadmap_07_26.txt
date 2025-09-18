@@ -1,2 +1,0 @@
-1. far tornare le cose riguardo alla prima parte di classification. SARA
-2. finire svm (provare PCA per feature selection). VALE

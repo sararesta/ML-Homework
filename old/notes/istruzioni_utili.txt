@@ -1,6 +1,0 @@
-cv = KFold(n_splits=5, random_state=42, shuffle=True)
-
-
-# stampa e calcola gli score relativi ai test
-test_scores_logistic, cm_logistic = classification_metrics_test(model_logistic,"LogisticRegression", X_train_scaled[features_logistic], y_train,X_test_scaled[features_logistic], y_test,empirical_threshold)
-test_scores_logistic
