@@ -5,7 +5,7 @@
  * Course: Machine learning
  * A.A.: 2022/2023
  * Professors: Matteo Matteucci, Stefano Samele
- * Grade: 6/6   
+ * Grade: 6/6  
   
 -------------------------------------------------------------
     
