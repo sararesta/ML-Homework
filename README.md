@@ -1,12 +1,11 @@
 # ML-Homework 2022/2023
- * Authors: Valentina Margiotta, Sara Resta
+ * Authors:
+   * [Valentina Margiotta](https://github.com/ValeMargiotta)
+   * [Sara Resta](https://github.com/sararesta)
  * Course: Machine learning
  * A.A.: 2022/2023
  * Professors: Matteo Matteucci, Stefano Samele
- * Grade: 6/6
- * Group members:
-   * [Valentina Margiotta](https://github.com/ValeMargiotta)
-   * [Sara Resta](https://github.com/sararesta)
+ * Grade: 6/6   
   
 -------------------------------------------------------------
     
